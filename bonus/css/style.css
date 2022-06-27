@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-between;
 }
-.todos-list .todo .actions span {
+.todos-list .todo span {
     cursor: pointer;
 }
 

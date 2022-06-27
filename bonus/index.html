@@ -22,8 +22,11 @@
         <div class="todos-container">
             <ul v-if="todos.length > 0" class="todos-list">
                 <!-- Template base todo -->
-                <li v-for="(singleTodo, index) in todos" class="todo" :class="{'text-line-through': singleTodo.done }">
+                <li  v-for="(singleTodo, index) in todos" class="todo" :class="{'text-line-through': singleTodo.done }">
+                <span @click="TodoOrNotTodo(singleTodo)">
                     {{ singleTodo.text }}
+                </span>
+                    
                     <div class="actions">
                         <span @click="removeTodo(index)">
                             <i class="fa fa-times" aria-hidden="true"></i>

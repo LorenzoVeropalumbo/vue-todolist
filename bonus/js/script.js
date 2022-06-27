@@ -12,11 +12,11 @@ var app = new Vue(
                     done: false,
                 },
                 {
-                    text: 'Fare i compiti',
+                    text: 'Fare la spesa',
                     done: true,
                 },
                 {
-                    text: 'Fare i compiti',
+                    text: 'Fare il bucato',
                     done: false,
                 }
             ]
@@ -39,8 +39,8 @@ var app = new Vue(
             removeTodo(index) {
                 this.todos.splice(index, 1);
             },
-            TodoOrNotTodo() {
-                
+            TodoOrNotTodo(singleTodo) {
+                singleTodo.done = ! singleTodo.done;
             }
         }
     }
