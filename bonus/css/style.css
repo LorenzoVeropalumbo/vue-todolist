@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inputs area */
+.inputs {
+    padding: 40px;
+    text-align: center;
+}
+.inputs input {
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 400px;
+}
+.inputs button {
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Todos area */
+.todos-container {
+    width: 70%;
+    margin: auto;
+    background-color: #F5F7F7;
+    padding: 25px;
+    border-radius: 10px;
+}
+.todos-list {
+    list-style-type: none;
+}
+.todos-list .todo {
+    border-bottom: 2px solid #e8ebed;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.todos-list .todo .actions span {
+    cursor: pointer;
+}
+
+/* line-through */
+.text-line-through{
+    text-decoration: line-through;
+}
