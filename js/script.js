@@ -25,12 +25,14 @@ var app = new Vue(
             addNewTodo() {
                 if(this.newTodoText.length > 0) {
                     
-                    // Pushare nell'array newTodoText
+                    // creo l'obj
                     this.newTodoObj = {
                         'text': this.newTodoText,
                         'done': false,
                     };
+                    // creo una copia dell'array
                     this.copyTodoObj = {...this.newTodoObj};
+                    // Pushare nell'array newTodoText
                     this.todos.push(this.copyTodoObj);
                     this.newTodoText = '';
                 }
