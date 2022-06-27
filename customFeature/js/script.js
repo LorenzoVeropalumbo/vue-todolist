@@ -1,7 +1,7 @@
 var app = new Vue(
     {
         el: '#root',
-        data: { 
+        data: {
             copyTodoObj: {},
             newTodoObj: {},
             newTodoText: '',
@@ -18,7 +18,7 @@ var app = new Vue(
                     text: 'Fare il bucato',
                     done: false,
                 }
-            ]
+            ],
         },
         methods: {
             addNewTodo() {
