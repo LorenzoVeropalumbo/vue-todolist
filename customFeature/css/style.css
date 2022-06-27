@@ -46,6 +46,12 @@
 .todos-list .todo span {
     cursor: pointer;
 }
+.todos-list .todo:hover {
+    background-color: white;
+}
+.todos-list .todo span i:hover{
+    color: red;
+}
 
 /* line-through */
 .text-line-through{
