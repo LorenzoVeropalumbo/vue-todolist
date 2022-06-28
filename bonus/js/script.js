@@ -2,9 +2,7 @@ var app = new Vue(
     {
         el: '#root',
         data: {
-            
-            copyTodoObj: {},
-            newTodoObj: {},
+
             newTodoText: '',
             todos: [
                 {
@@ -25,15 +23,12 @@ var app = new Vue(
             addNewTodo() {
                 if(this.newTodoText.length > 0) {
                     // Pushare nell'array newTodoText
-                    this.newTodoObj = {
+                    const newTodoObj = {
                         'text': this.newTodoText,
                         'done': false,
                     }
-                    this.copyTodoObj = {...this.newTodoObj}
-                    this.todos.push(this.copyTodoObj);
+                    this.todos.push(newTodoObj);
                     this.newTodoText = '';
-                    this.copyTodoObj = {};
-                    this.newTodoObj = {};
                 }
             },
             removeTodo(index) {
